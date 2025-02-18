@@ -4,7 +4,7 @@ Solutions to [Ethernaut CTF](https://ethernaut.openzeppelin.com/) challenges ⛳
 
 ## CONTENTS
 
-1. [Fallback](#)
+1. [Fallback](#1---fallback)
 2. [Fallout](#2---fallout)
 3. [Coin Flip](#3---coinflip)
 4. [Telephone](#4---telephone)
@@ -30,7 +30,7 @@ function Fal1out() public payable {
 ```
 Anyone can call the below function and therefore claim ownership of the contract:
 
-[Test](#)
+[Test](https://github.com/Derastephh/ethernaut-solutions/blob/main/test/FallOutTest.t.sol)
 
 ## 9 - King
 
@@ -40,4 +40,4 @@ Anyone that sends a bigger msg.value than the previous king becomes the new king
 
 We can send ether from a malicious contract with no receive or fallback function, thereby breaking the king contract and remaining the undisputed king.
 
-[Test](#)
+[Test](https://github.com/Derastephh/ethernaut-solutions/blob/main/test/KingTest.sol)
