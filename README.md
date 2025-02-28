@@ -28,7 +28,7 @@ receive() external payable {
 ```
  We only have to make at least 1 wei of contribution, send any eth greater than 0 and we become the new owner of the contract. Now we can call the withdraw function and drain the contract.
 
- [Test](#)
+ [Test](https://github.com/Derastephh/ethernaut-solutions/blob/main/test/FallbackTest.t.sol)
 
 ## 2 - Fallout
 
