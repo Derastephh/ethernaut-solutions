@@ -16,6 +16,20 @@ Solutions to [Ethernaut CTF](https://ethernaut.openzeppelin.com/) challenges ⛳
 
 ## 1 - Fallback
 
+Our objectives is to claim ownership of this contract and drain it's ETH.
+
+Taking a look at the receive function:
+
+```javascript
+receive() external payable {
+        require(msg.value > 0 && contributions[msg.sender] > 0);
+        owner = msg.sender;
+    }
+```
+ We only have to make at least 1 wei of contribution, send any eth greater than 0 and we become the new owner of the contract. Now we can call the withdraw function and drain the contract.
+
+ [Test](#)
+
 ## 2 - Fallout
 
 The goal of the Ethernaut Fallout challenge is to claim ownership of the contract.
