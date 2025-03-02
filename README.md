@@ -46,6 +46,14 @@ Anyone can call the below function and therefore claim ownership of the contract
 
 [Test](https://github.com/Derastephh/ethernaut-solutions/blob/main/test/FallOutTest.t.sol)
 
+## 3 - CoinFlip
+
+This is a coin flipping game where you need to build up your winning streak by guessing the outcome of a coin flip. To complete this level you'll need to use your psychic abilities to guess the correct outcome 10 times in a row.
+
+This contract relies on blockhash(block.number - 1), which is predictable, making it vulnerable to an attacker who can calculate the correct outcome before calling flip
+
+[Test](#)
+
 ## 9 - King
 
 In this challenge, the goal is to become the new king and prevent others from becoming a king.
