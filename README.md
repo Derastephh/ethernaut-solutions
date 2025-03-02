@@ -52,7 +52,7 @@ This is a coin flipping game where you need to build up your winning streak by g
 
 This contract relies on blockhash(block.number - 1), which is predictable, making it vulnerable to an attacker who can calculate the correct outcome before calling flip
 
-[Test](#)
+[Test](https://github.com/Derastephh/ethernaut-solutions/blob/main/test/CoinFlipTest.t.sol)
 
 ## 9 - King
 
